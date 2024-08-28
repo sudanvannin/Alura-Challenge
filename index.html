@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Decodificador de texto</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./assets/logo.png" alt="logo">
+    </header>
+    
+    <main class="conteudo-principal">
+        <section class="entrada-texto">
+            <textarea class="entrada-texto__campo" id="texto-original" placeholder="Digite seu texto"></textarea>
+            <div class="alerta">
+                <img src="./assets/Group.png" alt="sinal de exclamacao"> 
+                <p class="alerta__texto">Apenas letras minúsculas e sem acento</p>
+            </div>
+            <div class="botoes">     
+                <button id="criptografar" class="botao botao--primario">Criptografar</button>
+                <button id="descriptografar" class="botao botao--secundario">Descriptografar</button>
+            </div>
+        </section>    
+        <section class="saida-texto">
+            <div id="conteudo-padrao">
+                <img class="saida-texto__imagem" src="./assets/ilustracao.png" alt="Ilustração">
+                <p class="saida-texto__mensagem">Nenhuma mensagem encontrada</p>
+                <p class="saida-texto__instrucao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <textarea id="resultado" class="saida-texto__resultado" readonly></textarea>
+            <button id="btn-copiar" class="botao botao--copiar">Copiar</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
